@@ -1,0 +1,94 @@
+:root {
+  --studio: #0E0F12;
+  --surface: #16181D;
+  --raised: #1E2128;
+  --ink: #F2F3F5;
+  --muted: #8A8F98;
+  --coral: #FF6B54;
+  --hairline: rgba(255, 255, 255, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 20px 80px;
+  background: var(--studio);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 680px; margin: 0 auto; }
+
+header {
+  padding: 56px 0 32px;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 36px;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(160deg, #22252D, #0B0C0E);
+  position: relative;
+  flex: none;
+  overflow: hidden;
+}
+.icon::before, .icon::after {
+  content: "";
+  position: absolute;
+  border-radius: 6px;
+}
+.icon::before {
+  width: 24px; height: 13px;
+  background: var(--ink);
+  left: 8px; top: 12px;
+}
+.icon::after {
+  width: 26px; height: 14px;
+  background: var(--coral);
+  right: 7px; bottom: 11px;
+}
+
+h1 { font-size: 30px; letter-spacing: -0.02em; margin: 0; }
+h2 { font-size: 19px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+h3 { font-size: 15px; margin: 26px 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+p, li { color: #C9CDD4; }
+a { color: var(--coral); }
+strong { color: var(--ink); }
+
+.lede { font-size: 18px; color: var(--ink); }
+.updated { color: var(--muted); font-size: 14px; margin-top: 4px; }
+
+nav { margin-top: 22px; display: flex; gap: 18px; font-size: 15px; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 18px 0;
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 22px;
+  border-top: 1px solid var(--hairline);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root { --studio: #FFFFFF; --surface: #F6F7F9; --raised: #EDEFF2; --ink: #14161A; --muted: #6B7280; --hairline: rgba(0,0,0,0.10); }
+  p, li { color: #3C424B; }
+}
