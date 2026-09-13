@@ -13,7 +13,7 @@
     <a class="mark" href="./"><span class="icon"></span><h1>Privacy Policy</h1></a>
     <p class="lede">FakeChat Studio has no account system and no backend. Your conversations stay on
     your devices.</p>
-    <p class="updated">Last updated 28 August 2026</p>
+    <p class="updated">Last updated 13 September 2026</p>
     <nav><a href="./">Support</a><a href="privacy.html">Privacy</a></nav>
   </header>
 
@@ -28,10 +28,10 @@
   <h2>What stays on your device</h2>
   <p>Everything you create. The conversations, the names you give people, the messages, the photos
   you add, and the images and videos you export are all stored locally on your iPhone.</p>
-  <p>If you turn on <strong>Sync with iCloud</strong> in Settings — it is off unless you switch it
-  on — those conversations are also stored in your own private iCloud database, so they survive a
-  new phone. That data belongs to your Apple Account. We cannot see it, and it does not pass
-  through any system of ours.</p>
+  <p>There is no sync in this version. Your conversations exist on the one device you made them
+  on, and nowhere else. If your phone is backed up to iCloud they are part of that backup, which
+  belongs to your Apple Account — we cannot see it, and it does not pass through any system of
+  ours.</p>
 
   <h2>What is collected</h2>
   <p>The app reports anonymous usage events so we can tell which features matter and where people
@@ -47,7 +47,14 @@
   <p><strong>No message text, no names, no photos, and no exported files are ever included in any
   of this.</strong> There is no account to attach it to, and no advertising identifier is used or
   collected.</p>
-  <p>You can turn these events off entirely in the app's Settings. Nothing else changes when you do.</p>
+  <p>These events are processed by <strong>Google Firebase Analytics</strong>, which assigns the
+  installation a random identifier of its own so it can tell one device's events apart from
+  another's. That identifier is not linked to you, it is not shared with anyone, and it is gone
+  when you delete the app.</p>
+  <p>You can turn these events off entirely in the app's Settings. Turning them off is real: with
+  the switch off the analytics service is never started at all, so nothing is sent and nothing is
+  held back to send later. Turning it off after the fact stops collection from that moment.
+  Nothing else about the app changes when you do.</p>
 
   <h2>Photos</h2>
   <p>The app asks for permission to <em>add</em> to your photo library, and only when you tap Save
