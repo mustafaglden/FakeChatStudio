@@ -1,4 +1,4 @@
-# FakeChat Studio — privacy policy and support
+# Chat Story Studio — privacy policy and support
 
 Served at <https://mustafaglden.github.io/FakeChatStudio/>.
 
